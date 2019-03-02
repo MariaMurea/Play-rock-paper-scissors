@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Play ROCK - PAPER - SCISSORS</h1>
+    <br>
+    <div class="centralDiv">
+
+        <!-- PLAYER -->
+        <div class="div1">
+            <div class="div2">
+                <form action="" id="playerPick">
+                    <input type="radio" id="rock" name="option" value="rock">
+                        <label for="rock">
+                            <img class="playerChoice" src="rock.png" alt="Rock">
+                        </label>  
+                    <input type="radio" id="paper" name="option" value="paper"> 
+                        <label for="paper">
+                            <img class="playerChoice" src="paper.png" alt="Paper">
+                        </label> 
+                    <input type="radio" id="scissor" name="option" value="scissor"> 
+                        <label for="scissor">
+                            <img class="playerChoice" src="scissors.png" alt="Scissors">
+                        </label> 
+                </form>
+            </div>   
+            <p id="playerOption">PLAYER PICK</p>
+            <img class="imageHompage"  id="playerImg" src="hand.gif">
+        </div>
+
+        <!-- COMPUTER -->
+        <div class="div1"> 
+            <div class="div2"> 
+                <form action="" id="computerPick">
+                    <input id="startButton" type="button" value="Computer pick" onclick="playGame()">
+                </form>
+            </div>  
+            <p id="computerOption">COMPUTER PICK</p>
+            <img class="imageHompage" id="computerImg" src="roboHand.gif">
+        </div>
+
+        <h2 id="winner">And the winner is: </h2>
+
+        <button value="Refresh Page" onClick="window.location.reload()">Play again</button>
+
+    </div>
+ <script src="main.js"></script>   
+</body>
+</html>
